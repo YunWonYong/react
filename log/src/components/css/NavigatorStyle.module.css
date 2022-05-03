@@ -1,0 +1,73 @@
+.left {
+    float: left;
+}
+
+.left::after {
+    clear: both;
+}
+
+.normal {
+    display: inline-block;
+}
+
+.menu {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+    align-items: baseline;
+}
+
+.menu .item {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    display: block;
+    width: 5rem;
+}
+
+.link:active,
+.link:hover,
+.link:link,
+.link:visited {
+    color: black;
+}
+
+.link:hover {
+    font-weight: bold;
+    position: relative;
+}
+
+.link:hover::after {
+    content: " ";
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    border: 1px solid black;
+    animation-name: underbar;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+.normal {
+    border: 1px solid black;
+}
+
+
+
+
+
+/* 애니메이션 */
+@keyframes underbar {
+    from {        
+        width: 0%;
+    }
+    
+    to {
+        width: 100%;
+    }
+}
