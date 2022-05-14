@@ -1,0 +1,20 @@
+.item-list {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.item-list.separator-pipe .item:not(:last-of-type)::after {
+  content: "|";
+  margin: 1em;
+  font-weight: bold;
+}
+
+.item {
+  display: inline;
+}
+
+.flex-round {
+  display: flex;
+  justify-content: space-between;
+}

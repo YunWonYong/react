@@ -1,0 +1,79 @@
+.wrap {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  position: relative;
+  min-height: 100vh;
+}
+
+.header {
+  width: 100%;
+  overflow: hidden;
+  height: 103px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header a {
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+}
+
+.header a:hover {
+  color: rgba(0, 102, 255, 0.822);
+}
+
+.header button {
+  font-weight: 900;
+  width: 71px;
+}
+
+.header img {
+  vertical-align: bottom;
+}
+
+.logo {
+  width: 20%;
+  height: inherit;
+  background-color: #c0c0c0;
+  line-height: 6;
+}
+
+.navigation {
+  width: 80%;
+  height: 100%;
+}
+
+.navigation > article {
+  text-align: right;
+}
+
+.navigation > article > * {
+  padding-top: 3px;
+  margin: 0px 1em 5px;
+  text-align: center;
+}
+
+.navigation > nav {
+  background-color: #c0c0c0;
+  padding: 0.8em;
+}
+
+.footer {
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 2em 0;
+  margin-top: 1em;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.footer > .left {
+  padding-left: 1em;
+}
+
+.footer > .right {
+  padding-right: 1em;
+}
