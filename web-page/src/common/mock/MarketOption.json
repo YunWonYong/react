@@ -1,88 +1,199 @@
 [
-    {
-        "title": "Slot",
-        "count": "108",
-        "options": [
-            {
-                "title": "rockingbell","count":"1","checked":false},
-            {"title":"sevenrush","count":"6","checked":false},{"title":"wheelofvegas","count":"5","checked":false},{"title":"super25","count":"4","checked":false},{"title":"thunderstrike","count":"8","checked":false},{"title":"dualwheelaction","count":"7","checked":false},{"title":"blazingphoenix","count":"1","checked":false},{"title":"majesticlion","count":"1","checked":false},{"title":"fortunepot","count":"9","checked":false},{"title":"nudgewild","count":"1","checked":false},{"title":"blackwhitetiger","count":"6","checked":false},{"title":"tajmahalprincess","count":"10","checked":false},{"title":"themightyviking","count":"9","checked":false},{"title":"superninebells","count":"1","checked":false},{"title":"goldencrown","count":"1","checked":false},{"title":"rhinoblitz","count":"9","checked":false},{"title":"rollthedice","count":"4","checked":false},{"title":"mysticgypsy","count":"6","checked":false},{"title":"curiousmermaid","count":"10","checked":false},{"title":"diamondstrike","count":"2","checked":false},{"title":"santarudolph","count":"2","checked":false},{"title":"dragontales","count":"6","checked":false},{"title":"orientallanterns","count":"10","checked":false},{"title":"kingofsafari","count":"9","checked":false},{"title":"boomburst","count":"8","checked":false},{"title":"goldenbuffalo","count":"4","checked":false},{"title":"firelockclassic","count":"9","checked":false},{"title":"gemdiggerjoe","count":"3","checked":false},{"title":"pharaohsecrets","count":"4","checked":false},{"title":"100xdollar","count":"9","checked":false},{"title":"magiclamp","count":"1","checked":false},{"title":"returnofcaptainhook","count":"3","checked":false},{"title":"american9eagles","count":"4","checked":false},{"title":"sishenfortunes","count":"7","checked":false},{"title":"birdjackpot","count":"8","checked":false},{"title":"nudginglockclassic","count":"7","checked":false},{"title":"fruityjewels","count":"1","checked":false},{"title":"wildwolf","count":"10","checked":false},{"title":"cashdash","count":"10","checked":false},{"title":"oktoberfestbierhaus","count":"8","checked":false},{"title":"bellstrikefrenzy","count":"1","checked":false},{"title":"pumpkinfortune","count":"8","checked":false},{"title":"golden100xdollar","count":"10","checked":false},{"title":"fatturkeywilds","count":"7","checked":false},{"title":"wrathofzeus","count":"8","checked":false},{"title":"frozenthronerespin","count":"5","checked":false},{"title":"casinoroyale","count":"7","checked":false},{"title":"gummytummywild","count":"10","checked":false},{"title":"super25deluxe","count":"5","checked":false},{"title":"fortunetree","count":"1","checked":false},{"title":"shanghaifullmoon","count":"3","checked":false},{"title":"carnivalinrio","count":"5","checked":false},{"title":"fireblastclassic","count":"9","checked":false},{"title":"aliceinwonderland","count":"8","checked":false},{"title":"leprechaunluckyrespins","count":"3","checked":false},{"title":"rainbowpearl","count":"2","checked":false},{"title":"pharaohsbeetlelink","count":"7","checked":false},{"title":"frankendualshock","count":"7","checked":false},{"title":"luckyamericanroll","count":"10","checked":false},{"title":"midastouchofriches","count":"8","checked":false},{"title":"tripleblastclassic","count":"7","checked":false},{"title":"classiclockrollgrand","count":"8","checked":false},{"title":"4thofjulywildrespin","count":"1","checked":false},{"title":"makeitrain","count":"8","checked":false},{"title":"blazingbullwild","count":"10","checked":false},{"title":"alohahawaii","count":"6","checked":false},{"title":"lollylandgummyking","count":"10","checked":false},{"title":"abracadabra","count":"10","checked":false},{"title":"diamondbeamjackpot","count":"5","checked":false},{"title":"piggybankriches","count":"3","checked":false},{"title":"dreamcitylights","count":"1","checked":false},{"title":"emeraldgreen","count":"5","checked":false},{"title":"ghosthunters","count":"9","checked":false},{"title":"megatondynamite","count":"3","checked":false},{"title":"shopaholic","count":"9","checked":false},{"title":"goldenbuffalofever","count":"8","checked":false},{"title":"rudolphexpress","count":"5","checked":false},{"title":"honeybeeparade","count":"2","checked":false},{"title":"highrisejackpot","count":"9","checked":false},{"title":"bankofwealth","count":"7","checked":false},{"title":"cupidslovewheel","count":"3","checked":false},{"title":"leprechaunmagicdrop","count":"8","checked":false},{"title":"cashshowdown","count":"2","checked":false},{"title":"mayantemplemagic","count":"7","checked":false},{"title":"flamefurywheel","count":"9","checked":false},{"title":"chilichilifever","count":"1","checked":false},{"title":"imperialgoldfortune","count":"8","checked":false},{"title":"americanvalor","count":"9","checked":false},{"title":"bingotrio","count":"4","checked":false},{"title":"firelockultimate","count":"3","checked":false},{"title":"greatamerica","count":"1","checked":false},{"title":"kongfury","count":"2","checked":false},{"title":"sharkattack","count":"10","checked":false},{"title":"pinkstardiamonds","count":"4","checked":false},{"title":"kingdominperil","count":"3","checked":false},{"title":"piggyhouses","count":"3","checked":false},{"title":"jiujiujiu999","count":"8","checked":false},{"title":"fantasticeagles","count":"10","checked":false},{"title":"cashshowdownclassic","count":"10","checked":false},{"title":"moonlightwolf","count":"8","checked":false},{"title":"spookynight","count":"5","checked":false},{"title":"fatbilly","count":"3","checked":false},{"title":"goldentrain","count":"5","checked":false},{"title":"rapidhitantarctic","count":"2","checked":false},{"title":"marineadventure","count":"4","checked":false},{"title":"bigbucksbounty","count":"1","checked":false},{"title":"babysantawild","count":"1","checked":false},{"title":"winyourheart","count":"4","checked":false},{"title":"wudangjianshi","count":"9","checked":false}]
-    },
-    {
-        "title": "Body Color",
-        "count": "3",
-        "options": [
-            {
-                "title": "Blue",
-                "count": "25",
-                "checked": false
-            },
-            {
-                "title": "Red",
-                "count": "25",
-                "checked": false
-            },
-            {
-                "title": "Yellow",
-                "count": "25",
-                "checked": false
-            }
-        ]
-    },
-    {
-        "title": "Lever",
-        "count": "4",
-        "options": [
-            {
-                "title": "Blue",
-                "count": "25",
-                "checked": false
-            },
-            {
-                "title": "Red",
-                "count": "25",
-                "checked": false
-            },
-            {
-                "title": "Yellow",
-                "count": "25",
-                "checked": false
-            },
-            {
-                "title": "Green",
-                "count": "25",
-                "checked": false
-            }
-        ]
-    },
-    {
-        "title": "Chair",
-        "count": "5",
-        "options": [
-            {
-                "title": "Blue",
-                "count": "25",
-                "checked": false
-            },
-            {
-                "title": "Red",
-                "count": "25",
-                "checked": false
-            },
-            {
-                "title": "Yellow",
-                "count": "25",
-                "checked": false
-            },
-            {
-                "title": "Green",
-                "count": "25",
-                "checked": false
-            },
-            {
-                "title": "None",
-                "count": "25",
-                "checked": false
-            }
-        ]
-    }
+  {
+    "title": "Slot",
+    "count": "108",
+    "options": [
+      {
+        "title": "rockingbell",
+        "count": "1",
+        "checked": false
+      },
+      { "title": "sevenrush", "count": "6", "checked": false },
+      { "title": "wheelofvegas", "count": "5", "checked": false },
+      { "title": "super25", "count": "4", "checked": false },
+      { "title": "thunderstrike", "count": "8", "checked": false },
+      { "title": "dualwheelaction", "count": "7", "checked": false },
+      { "title": "blazingphoenix", "count": "1", "checked": false },
+      { "title": "majesticlion", "count": "1", "checked": false },
+      { "title": "fortunepot", "count": "9", "checked": false },
+      { "title": "nudgewild", "count": "1", "checked": false },
+      { "title": "blackwhitetiger", "count": "6", "checked": false },
+      { "title": "tajmahalprincess", "count": "10", "checked": false },
+      { "title": "themightyviking", "count": "9", "checked": false },
+      { "title": "superninebells", "count": "1", "checked": false },
+      { "title": "goldencrown", "count": "1", "checked": false },
+      { "title": "rhinoblitz", "count": "9", "checked": false },
+      { "title": "rollthedice", "count": "4", "checked": false },
+      { "title": "mysticgypsy", "count": "6", "checked": false },
+      { "title": "curiousmermaid", "count": "10", "checked": false },
+      { "title": "diamondstrike", "count": "2", "checked": false },
+      { "title": "santarudolph", "count": "2", "checked": false },
+      { "title": "dragontales", "count": "6", "checked": false },
+      { "title": "orientallanterns", "count": "10", "checked": false },
+      { "title": "kingofsafari", "count": "9", "checked": false },
+      { "title": "boomburst", "count": "8", "checked": false },
+      { "title": "goldenbuffalo", "count": "4", "checked": false },
+      { "title": "firelockclassic", "count": "9", "checked": false },
+      { "title": "gemdiggerjoe", "count": "3", "checked": false },
+      { "title": "pharaohsecrets", "count": "4", "checked": false },
+      { "title": "100xdollar", "count": "9", "checked": false },
+      { "title": "magiclamp", "count": "1", "checked": false },
+      { "title": "returnofcaptainhook", "count": "3", "checked": false },
+      { "title": "american9eagles", "count": "4", "checked": false },
+      { "title": "sishenfortunes", "count": "7", "checked": false },
+      { "title": "birdjackpot", "count": "8", "checked": false },
+      { "title": "nudginglockclassic", "count": "7", "checked": false },
+      { "title": "fruityjewels", "count": "1", "checked": false },
+      { "title": "wildwolf", "count": "10", "checked": false },
+      { "title": "cashdash", "count": "10", "checked": false },
+      { "title": "oktoberfestbierhaus", "count": "8", "checked": false },
+      { "title": "bellstrikefrenzy", "count": "1", "checked": false },
+      { "title": "pumpkinfortune", "count": "8", "checked": false },
+      { "title": "golden100xdollar", "count": "10", "checked": false },
+      { "title": "fatturkeywilds", "count": "7", "checked": false },
+      { "title": "wrathofzeus", "count": "8", "checked": false },
+      { "title": "frozenthronerespin", "count": "5", "checked": false },
+      { "title": "casinoroyale", "count": "7", "checked": false },
+      { "title": "gummytummywild", "count": "10", "checked": false },
+      { "title": "super25deluxe", "count": "5", "checked": false },
+      { "title": "fortunetree", "count": "1", "checked": false },
+      { "title": "shanghaifullmoon", "count": "3", "checked": false },
+      { "title": "carnivalinrio", "count": "5", "checked": false },
+      { "title": "fireblastclassic", "count": "9", "checked": false },
+      { "title": "aliceinwonderland", "count": "8", "checked": false },
+      { "title": "leprechaunluckyrespins", "count": "3", "checked": false },
+      { "title": "rainbowpearl", "count": "2", "checked": false },
+      { "title": "pharaohsbeetlelink", "count": "7", "checked": false },
+      { "title": "frankendualshock", "count": "7", "checked": false },
+      { "title": "luckyamericanroll", "count": "10", "checked": false },
+      { "title": "midastouchofriches", "count": "8", "checked": false },
+      { "title": "tripleblastclassic", "count": "7", "checked": false },
+      { "title": "classiclockrollgrand", "count": "8", "checked": false },
+      { "title": "4thofjulywildrespin", "count": "1", "checked": false },
+      { "title": "makeitrain", "count": "8", "checked": false },
+      { "title": "blazingbullwild", "count": "10", "checked": false },
+      { "title": "alohahawaii", "count": "6", "checked": false },
+      { "title": "lollylandgummyking", "count": "10", "checked": false },
+      { "title": "abracadabra", "count": "10", "checked": false },
+      { "title": "diamondbeamjackpot", "count": "5", "checked": false },
+      { "title": "piggybankriches", "count": "3", "checked": false },
+      { "title": "dreamcitylights", "count": "1", "checked": false },
+      { "title": "emeraldgreen", "count": "5", "checked": false },
+      { "title": "ghosthunters", "count": "9", "checked": false },
+      { "title": "megatondynamite", "count": "3", "checked": false },
+      { "title": "shopaholic", "count": "9", "checked": false },
+      { "title": "goldenbuffalofever", "count": "8", "checked": false },
+      { "title": "rudolphexpress", "count": "5", "checked": false },
+      { "title": "honeybeeparade", "count": "2", "checked": false },
+      { "title": "highrisejackpot", "count": "9", "checked": false },
+      { "title": "bankofwealth", "count": "7", "checked": false },
+      { "title": "cupidslovewheel", "count": "3", "checked": false },
+      { "title": "leprechaunmagicdrop", "count": "8", "checked": false },
+      { "title": "cashshowdown", "count": "2", "checked": false },
+      { "title": "mayantemplemagic", "count": "7", "checked": false },
+      { "title": "flamefurywheel", "count": "9", "checked": false },
+      { "title": "chilichilifever", "count": "1", "checked": false },
+      { "title": "imperialgoldfortune", "count": "8", "checked": false },
+      { "title": "americanvalor", "count": "9", "checked": false },
+      { "title": "bingotrio", "count": "4", "checked": false },
+      { "title": "firelockultimate", "count": "3", "checked": false },
+      { "title": "greatamerica", "count": "1", "checked": false },
+      { "title": "kongfury", "count": "2", "checked": false },
+      { "title": "sharkattack", "count": "10", "checked": false },
+      { "title": "pinkstardiamonds", "count": "4", "checked": false },
+      { "title": "kingdominperil", "count": "3", "checked": false },
+      { "title": "piggyhouses", "count": "3", "checked": false },
+      { "title": "jiujiujiu999", "count": "8", "checked": false },
+      { "title": "fantasticeagles", "count": "10", "checked": false },
+      { "title": "cashshowdownclassic", "count": "10", "checked": false },
+      { "title": "moonlightwolf", "count": "8", "checked": false },
+      { "title": "spookynight", "count": "5", "checked": false },
+      { "title": "fatbilly", "count": "3", "checked": false },
+      { "title": "goldentrain", "count": "5", "checked": false },
+      { "title": "rapidhitantarctic", "count": "2", "checked": false },
+      { "title": "marineadventure", "count": "4", "checked": false },
+      { "title": "bigbucksbounty", "count": "1", "checked": false },
+      { "title": "babysantawild", "count": "1", "checked": false },
+      { "title": "winyourheart", "count": "4", "checked": false },
+      { "title": "wudangjianshi", "count": "9", "checked": false }
+    ]
+  },
+  {
+    "title": "Body Color",
+    "count": "3",
+    "options": [
+      {
+        "title": "Blue",
+        "count": "25",
+        "checked": false
+      },
+      {
+        "title": "Red",
+        "count": "25",
+        "checked": false
+      },
+      {
+        "title": "Yellow",
+        "count": "25",
+        "checked": false
+      }
+    ]
+  },
+  {
+    "title": "Lever",
+    "count": "4",
+    "options": [
+      {
+        "title": "Blue",
+        "count": "25",
+        "checked": false
+      },
+      {
+        "title": "Red",
+        "count": "25",
+        "checked": false
+      },
+      {
+        "title": "Yellow",
+        "count": "25",
+        "checked": false
+      },
+      {
+        "title": "Green",
+        "count": "25",
+        "checked": false
+      }
+    ]
+  },
+  {
+    "title": "Chair",
+    "count": "5",
+    "options": [
+      {
+        "title": "Blue",
+        "count": "25",
+        "checked": false
+      },
+      {
+        "title": "Red",
+        "count": "25",
+        "checked": false
+      },
+      {
+        "title": "Yellow",
+        "count": "25",
+        "checked": false
+      },
+      {
+        "title": "Green",
+        "count": "25",
+        "checked": false
+      },
+      {
+        "title": "None",
+        "count": "25",
+        "checked": false
+      }
+    ]
+  }
 ]

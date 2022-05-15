@@ -1,118 +1,119 @@
 [
-    {
-        "slotID": "sevenrush",
-        "tID": "2412421",
-        "img": "",
-        "color": "red",
-        "price": "123,123",
-        "wemixPrice": "92,123,321",
-        "info": {
-            "body": "blue",
-            "lever": "red",
-            "chair": "none"
-        }
-    },
-    {
-        "slotID": "spookynight",
-        "tID": "2412231",
-        "img": "",
-        "color": "blue",
-        "price": "123,123",
-        "wemixPrice": "92,123,321",
-        "info": {
-            "body": "blue",
-            "lever": "red",
-            "chair": "none"
-        }
-    },
-    {
-        "slotID": "jiujiujiu999",
-        "tID": "2423121",
-        "img": "",
-        "color": "green",
-        "price": "123,123",
-        "wemixPrice": "92,123,321",
-        "info": {
-            "body": "blue",
-            "lever": "red",
-            "chair": "none"
-        }
-    },
-    {
-        "slotID": "pinkstardiamonds",
-        "tID": "3212421",
-        "img": "",
-        "color": "red",
-        "price": "123,123",
-        "wemixPrice": "92,123,321",
-        "info": {
-            "body": "blue",
-            "lever": "red",
-            "chair": "none"
-        }
-    },
-    {
-        "slotID": "bankofwealth",
-        "tID": "8712231",
-        "img": "",
-        "color": "blue",
-        "price": "123,123",
-        "wemixPrice": "92,123,321",
-        "info": {
-            "body": "blue",
-            "lever": "red",
-            "chair": "none"
-        }
-    },
-    {
-        "slotID": "jiujiujiu999",
-        "tID": "24523121",
-        "img": "",
-        "color": "green",
-        "price": "123,123",
-        "wemixPrice": "92,123,321",
-        "info": {
-            "body": "blue",
-            "lever": "red",
-            "chair": "none"
-        }
-    },{
-        "slotID": "sevenrush",
-        "tID": "26512421",
-        "img": "",
-        "color": "red",
-        "price": "123,123",
-        "wemixPrice": "92,123,321",
-        "info": {
-            "body": "blue",
-            "lever": "red",
-            "chair": "none"
-        }
-    },
-    {
-        "slotID": "spookynight",
-        "tID": "53412231",
-        "img": "",
-        "color": "blue",
-        "price": "123,123",
-        "wemixPrice": "92,123,321",
-        "info": {
-            "body": "blue",
-            "lever": "red",
-            "chair": "none"
-        }
-    },
-    {
-        "slotID": "jiujiujiu999",
-        "tID": "29013121",
-        "img": "",
-        "color": "green",
-        "price": "123,123",
-        "wemixPrice": "92,123,321",
-        "info": {
-            "body": "blue",
-            "lever": "red",
-            "chair": "none"
-        }
+  {
+    "slotID": "sevenrush",
+    "tID": "2412421",
+    "img": "",
+    "color": "red",
+    "price": "123,123",
+    "wemixPrice": "92,123,321",
+    "info": {
+      "body": "blue",
+      "lever": "red",
+      "chair": "none"
     }
+  },
+  {
+    "slotID": "spookynight",
+    "tID": "2412231",
+    "img": "",
+    "color": "blue",
+    "price": "123,123",
+    "wemixPrice": "92,123,321",
+    "info": {
+      "body": "blue",
+      "lever": "red",
+      "chair": "none"
+    }
+  },
+  {
+    "slotID": "jiujiujiu999",
+    "tID": "2423121",
+    "img": "",
+    "color": "green",
+    "price": "123,123",
+    "wemixPrice": "92,123,321",
+    "info": {
+      "body": "blue",
+      "lever": "red",
+      "chair": "none"
+    }
+  },
+  {
+    "slotID": "pinkstardiamonds",
+    "tID": "3212421",
+    "img": "",
+    "color": "red",
+    "price": "123,123",
+    "wemixPrice": "92,123,321",
+    "info": {
+      "body": "blue",
+      "lever": "red",
+      "chair": "none"
+    }
+  },
+  {
+    "slotID": "bankofwealth",
+    "tID": "8712231",
+    "img": "",
+    "color": "blue",
+    "price": "123,123",
+    "wemixPrice": "92,123,321",
+    "info": {
+      "body": "blue",
+      "lever": "red",
+      "chair": "none"
+    }
+  },
+  {
+    "slotID": "jiujiujiu999",
+    "tID": "24523121",
+    "img": "",
+    "color": "green",
+    "price": "123,123",
+    "wemixPrice": "92,123,321",
+    "info": {
+      "body": "blue",
+      "lever": "red",
+      "chair": "none"
+    }
+  },
+  {
+    "slotID": "sevenrush",
+    "tID": "26512421",
+    "img": "",
+    "color": "red",
+    "price": "123,123",
+    "wemixPrice": "92,123,321",
+    "info": {
+      "body": "blue",
+      "lever": "red",
+      "chair": "none"
+    }
+  },
+  {
+    "slotID": "spookynight",
+    "tID": "53412231",
+    "img": "",
+    "color": "blue",
+    "price": "123,123",
+    "wemixPrice": "92,123,321",
+    "info": {
+      "body": "blue",
+      "lever": "red",
+      "chair": "none"
+    }
+  },
+  {
+    "slotID": "jiujiujiu999",
+    "tID": "29013121",
+    "img": "",
+    "color": "green",
+    "price": "123,123",
+    "wemixPrice": "92,123,321",
+    "info": {
+      "body": "blue",
+      "lever": "red",
+      "chair": "none"
+    }
+  }
 ]
