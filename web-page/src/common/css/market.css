@@ -1,0 +1,69 @@
+.wemix-log-box {
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 80px;
+    text-align: center;
+    background-color: rgb(239, 239, 239);
+    padding: 0px 2em;
+}
+
+.wemix-log-box .button {
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 0px 2em;
+    border: 2px solid black;
+    background-color: #c0c0c0;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.wemix-log-box .button img {
+    vertical-align: sub;
+}
+
+.wemix-log-box .button span {
+    vertical-align: super;
+}
+
+.wemix-log-box h3 {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.tab {
+    margin-bottom: 20px;
+}
+
+.tab > *:not(:last-child) {
+    margin-right: 10px;
+}
+
+.tab-button {
+    padding: 0.3em 4em;
+}
+
+.tab > img {
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+.option-box > section {
+    cursor: pointer;
+    border-bottom: 2px solid #c0c0c0;
+    padding: .3em;
+}
+
+.option-box > section:first-child {
+    border-top: 2px solid #c0c0c0;
+}
+
+.option-box .option-box-title {
+    font-size: 16px;
+}
+
+.option-box > section img {
+    vertical-align: sub;
+    margin-left: 5px;
+}
+
