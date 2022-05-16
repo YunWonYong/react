@@ -128,7 +128,12 @@ const Market = () => {
           <button className="tab-button">최근 판매 목록</button>
           <img src={refresh_32px} alt="refresh" />
         </article>
-        <article className="left option-box">
+        <article
+          className="left option-box"
+          style={{
+            width: "14%",
+          }}
+        >
           {MarketOption?.map(({ title, count, options }) => {
             return (
               <OptionBox
@@ -140,7 +145,7 @@ const Market = () => {
             );
           })}
         </article>
-        <div
+        {/* <div
           className="left"
           style={{
             width: "1%",
@@ -148,6 +153,16 @@ const Market = () => {
           }}
         ></div>
         <article className="right card-list">
+        ></div> */}
+        <article
+          className="right"
+          style={{
+            width: "80%",
+            display: "flex",
+            justifyContent: "space-between",
+            flexWrap: "wrap",
+          }}
+        >
           {SlotItem?.map((slotInfo) => (
             <Card key={slotInfo.tID} slotInfo={slotInfo} showFn={showFn} />
           ))}

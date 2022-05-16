@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react/static/css/main.c068ebad.css",
+    "main.js": "/react/static/js/main.c61ebb6f.js",
+    "static/media/lobby.png": "/react/static/media/lobby.605a193e513eb15e49eb.png",
+    "static/media/slot.png": "/react/static/media/slot.7b22ef6027642fd53804.png",
+    "index.html": "/react/index.html",
+    "main.c068ebad.css.map": "/react/static/css/main.c068ebad.css.map",
+    "main.c61ebb6f.js.map": "/react/static/js/main.c61ebb6f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c068ebad.css",
+    "static/js/main.c61ebb6f.js"
+  ]
+}
