@@ -130,7 +130,7 @@ const Market = () => {
         <article
           className="left option-box"
           style={{
-            width: "15%",
+            width: "14%",
           }}
         >
           {MarketOption?.map(({ title, count, options }) => {
@@ -144,17 +144,17 @@ const Market = () => {
             );
           })}
         </article>
-        <div
+        {/* <div
           className="left"
           style={{
             width: "1%",
             height: "100%",
           }}
-        ></div>
+        ></div> */}
         <article
           className="right"
           style={{
-            width: "84%",
+            width: "80%",
             display: "flex",
             justifyContent: "space-between",
             flexWrap: "wrap",
