@@ -10,21 +10,13 @@ import slot from "../assets/image/slot.png";
 
 import "../common/css/box.css";
 import "../common/css/market.css";
-const Card = ({
-  slotInfo: { slotID, tID, img, color, price, wemixPrice, info },
-}) => {
+const Card = ({ slotInfo, showFn }) => {
+  const { slotID, tID, img, color, price, wemixPrice } = slotInfo;
+  const read = () => {
+    showFn(slotInfo);
+  };
   return (
-    <section
-      style={{
-        width: "24%",
-        height: "300px",
-        textAlign: "center",
-        border: "1px solid #c0c0c0",
-        borderRadius: "5px",
-        display: "inline-block",
-        marginBottom: "5px",
-      }}
-    >
+    <section className="card-wrap" onClick={read}>
       <header>
         <h3
           style={{
@@ -92,6 +84,15 @@ const OptionBox = ({ title, count, options }) => {
   );
 };
 const Market = () => {
+  const [modalShow, setModalShow] = useState(null);
+  const showFn = (info) => {
+    setModalShow(info);
+    document.getElementsByTagName("body")[0].classList.add("over-hidden");
+  };
+  const cardExit = () => {
+    setModalShow(null);
+    document.getElementsByTagName("body")[0].classList.remove("over-hidden");
+  };
   return (
     <article>
       <section style={{ overflow: "hidden" }}>
@@ -127,12 +128,7 @@ const Market = () => {
           <button className="tab-button">최근 판매 목록</button>
           <img src={refresh_32px} alt="refresh" />
         </article>
-        <article
-          className="left option-box"
-          style={{
-            width: "15%",
-          }}
-        >
+        <article className="left option-box">
           {MarketOption?.map(({ title, count, options }) => {
             return (
               <OptionBox
@@ -151,20 +147,91 @@ const Market = () => {
             height: "100%",
           }}
         ></div>
-        <article
-          className="right"
-          style={{
-            width: "84%",
-            display: "flex",
-            justifyContent: "space-between",
-            flexWrap: "wrap",
-          }}
-        >
+        <article className="right card-list">
           {SlotItem?.map((slotInfo) => (
-            <Card key={slotInfo.tID} slotInfo={slotInfo} />
+            <Card key={slotInfo.tID} slotInfo={slotInfo} showFn={showFn} />
           ))}
         </article>
       </section>
+      {modalShow && (
+        <section className="modal-wrap">
+          <article className="modal-window">
+            <span className="modal-close-button" onClick={cardExit}>
+              XX
+            </span>
+            <article className="modal-info-wrap">
+              <div className="model-info-header">
+                <div className="left">
+                  <img src={slot} alt="slot" width="150px" height="160px" />
+                </div>
+                <div className="left text-box">
+                  <h3 style={{ color: modalShow.color }}>{modalShow.slotID}</h3>
+                  <p>TID {modalShow.tID}</p>
+                  <p>Owned by wemixID</p>
+                  <p>
+                    {modalShow.wemixPrice} {modalShow.price}
+                  </p>
+                </div>
+                <div className="right qr">QR</div>
+              </div>
+              <div className="model-info-ticker">
+                <p>Scan QR code with your WEMIX WALLET app to purchase NFT.</p>
+                <p className="ticker-info">
+                  Time left <span className="tick">01:28</span>
+                </p>
+              </div>
+              <div className="model-info-rare">
+                <div className="rare-info">
+                  <p className="type">Body Color</p>
+                  <p className="color">blue</p>
+                  <p>99.99% have this trait</p>
+                </div>
+                <div className="rare-info">
+                  <p className="type">Body Color</p>
+                  <p className="color">blue</p>
+                  <p>99.99% have this trait</p>
+                </div>
+                <div className="rare-info">
+                  <p className="type">Body Color</p>
+                  <p className="color">blue</p>
+                  <p>99.99% have this trait</p>
+                </div>
+                <div className="rare-info">
+                  <p className="type">Body Color</p>
+                  <p className="color">blue</p>
+                  <p>99.99% have this trait</p>
+                </div>
+                <div className="rare-info">
+                  <p className="type">Body Color</p>
+                  <p className="color">blue</p>
+                  <p>99.99% have this trait</p>
+                </div>
+                <div className="rare-info">
+                  <p className="type">Body Color</p>
+                  <p className="color">blue</p>
+                  <p>99.99% have this trait</p>
+                </div>
+                <div className="rare-info">
+                  <p className="type">Body Color</p>
+                  <p className="color">blue</p>
+                  <p>99.99% have this trait</p>
+                </div>
+                <div className="rare-info">
+                  <p className="type">Body Color</p>
+                  <p className="color">blue</p>
+                  <p>99.99% have this trait</p>
+                </div>
+                <div className="rare-info">
+                  <p className="type">Body Color</p>
+                  <p className="color">blue</p>
+                  <p>99.99% have this trait</p>
+                </div>
+              </div>
+            </article>
+            <article className="modal-bottom"></article>
+          </article>
+        </section>
+      )}
     </article>
   );
 };

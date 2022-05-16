@@ -3,6 +3,10 @@ body {
   padding: 0px;
 }
 
+.over-hidden {
+  overflow: hidden;
+}
+
 #root {
   width: 100vw;
   height: 100%;
