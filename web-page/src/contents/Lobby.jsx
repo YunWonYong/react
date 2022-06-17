@@ -1,3 +1,5 @@
+import React from "react";
+
 import lobby from "../assets/image/lobby.png";
 const Lobby = () => {
   return (

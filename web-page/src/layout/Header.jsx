@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import earthglobe_48px from "../assets/image/earthglobe_48px.png";
 import quote_48px from "../assets/image/quote_48px.png";
@@ -31,6 +32,9 @@ const Header = () => {
             </li>
             <li className="item">
               <Link to="/sloco">SLOCO</Link>
+            </li>
+            <li className="item">
+              <Link to="/mint">MINT</Link>
             </li>
             <li className="item">
               <Link to="/market">NFT Market</Link>

@@ -1,14 +1,12 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Wrap from "./layout/Wrap";
 import Lobby from "./contents/Lobby";
 import Market from "./contents/Market";
 import Mint from "./contents/Mint";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(
+ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
@@ -24,4 +22,4 @@ root.render(
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
-);
+, document.getElementById("root"));

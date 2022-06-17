@@ -1,3 +1,5 @@
+import React from "react";
+
 import { useState } from "react";
 import MarketOption from "../common/mock/MarketOption.json";
 import SlotItem from "../common/mock/SlotItem.json";

@@ -1,3 +1,4 @@
+import React from "react";
 import "./layout.css";
 import "../common/css/box.css";
 import "../common/css/list.css";
