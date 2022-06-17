@@ -87,7 +87,8 @@ const Market = () => {
   const [modalShow, setModalShow] = useState(null);
   const showFn = (info) => {
     setModalShow(info);
-    document.getElementsByTagName("body")[0].classList.add("over-hidden");
+    /* document.getElementsByTagName("body")[0].classList.add("over-hidden"); */
+    document.body.classList.add("over-hidden");
   };
   const cardExit = () => {
     setModalShow(null);
@@ -145,24 +146,7 @@ const Market = () => {
             );
           })}
         </article>
-        {/* <div
-          className="left"
-          style={{
-            width: "1%",
-            height: "100%",
-          }}
-        ></div>
         <article className="right card-list">
-        ></div> */}
-        <article
-          className="right"
-          style={{
-            width: "80%",
-            display: "flex",
-            justifyContent: "space-between",
-            flexWrap: "wrap",
-          }}
-        >
           {SlotItem?.map((slotInfo) => (
             <Card key={slotInfo.tID} slotInfo={slotInfo} showFn={showFn} />
           ))}
