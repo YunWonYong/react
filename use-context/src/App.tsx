@@ -1,16 +1,16 @@
-import { Dimmed, DimmedContextProvider } from "./context/DimmedContext";
-import { LoginBtn, UserContextProvider } from "./context/UserContext";
+import { GlobalDimmed, DimmedContextProvider } from "./context/DimmedContext";
+import { UserContextProvider } from "./context/UserContext";
+import Container from "./component/Container";
 
 const App = () => {
     return (
         <DimmedContextProvider>
-            <Dimmed />
+            <GlobalDimmed />
             <UserContextProvider>
-                <LoginBtn />
-                asdasd
+                <Container />
             </UserContextProvider>
         </DimmedContextProvider>
     );
-}
+};
 
 export default App;

@@ -10,9 +10,7 @@ enum DimmedState {
     GLOBAL_LOADING = "globalLoading",
     ASIDE_LOADING = "asideLoading",
     CONTAINER_LOADING = "containerLoading",
-    LOCAL_LOADING = "localLoading",
-    ALL = "all",
-    NONE = "none"
+    LOCAL_LOADING = "localLoading"
 };
 
 type DimmedContextType = {
@@ -21,7 +19,7 @@ type DimmedContextType = {
     state: DimmedStateType
 };
 
-const default_state = { className: DimmedState.NONE, flag: false };
+const default_state = { className: DimmedState.GLOBAL, flag: false };
 
 const DimmedContext = createContext<DimmedContextType>({
     open: () => console.log("init"),
@@ -43,8 +41,6 @@ type DimmedStateReducerType = {
 const reducer = (state: DimmedStateType, { type, flag }: DimmedStateReducerType) => {
     console.log("dimmed reducer fn");
     switch(type) {
-        case DimmedState.NONE:
-            return { className: "noen", flag };
         case DimmedState.GLOBAL:
             return { className: "global", flag };
         default:
@@ -100,6 +96,18 @@ const Dimmed = () => {
     );
 };
 
+const GlobalDimmed = () => {
+    const { state } = useContext(DimmedContext);
+    console.log(state);
+    return (
+        <>
+            {
+                state.flag &&
+                    <div className={ `${css.dimmed} ${css[state.className]}` }></div>
+            }
+        </>
+    );
+};
 export default DimmedContext; 
 
-export { Dimmed, DimmedContextProvider, DimmedState }
+export { Dimmed, GlobalDimmed, DimmedContextProvider, DimmedState }
