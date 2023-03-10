@@ -1,0 +1,8 @@
+.dimmed {
+    background-color: rgba(0, 0, 0, 0.155);
+}
+
+.dimmed.global {    
+    position: fixed;
+    inset: 0;
+}

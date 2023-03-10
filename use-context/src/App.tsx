@@ -1,8 +1,15 @@
+import { Dimmed, DimmedContextProvider } from "./context/DimmedContext";
+import { LoginBtn, UserContextProvider } from "./context/UserContext";
+
 const App = () => {
     return (
-        <section>
-            
-        </section>
+        <DimmedContextProvider>
+            <Dimmed />
+            <UserContextProvider>
+                <LoginBtn />
+                asdasd
+            </UserContextProvider>
+        </DimmedContextProvider>
     );
 }
 
