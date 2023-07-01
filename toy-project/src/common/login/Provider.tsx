@@ -1,15 +1,8 @@
 import { FC, useState } from "react";
 import { ChildrenType } from "../type";
 import LoginContext from "./Context";
-import LoginInterface, { LoginFactory, LoginType } from "./model";
-
-
-type LoginInfoType = {
-    instance: null | LoginInterface,
-    info: {
-        [key in string]: any
-    }
-};
+import { LoginManager, LoginType } from ".";
+import { LoginInfoType } from "./type";
 
 const Provider: FC<ChildrenType> = ({ children }) => {
     const [loginInfo, setLoginInfo] = useState<LoginInfoType>({
@@ -18,27 +11,19 @@ const Provider: FC<ChildrenType> = ({ children }) => {
             
         }
     });
-    const login = (type: LoginType): Promise<any> => {
-        return new Promise((resolve, reject) => {
-            try {
-                debugger;
-                const instance = LoginFactory.getInstance(type);
-                instance
-                .login()
-                .then((result) => {
-                    setLoginInfo({
-                        instance,
-                        info: {
-                            "asdaosdnaod": result
-                        }
-                    });
-                    resolve(result);
-                })
-                .catch(reject);
-            } catch(e) {
-                reject(e);
-            }
-        });
+    const login = async (type: LoginType) => {
+        try {
+            const instance = LoginManager.getInstance(type);
+            const result = await instance.login();
+            setLoginInfo(() => {
+                return {
+                    instance,
+                    info: result
+                };
+            });
+        } catch(e) {
+            throw e;
+        }
     };
 
     const logout = (): Promise<any> => {

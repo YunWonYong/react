@@ -1,6 +1,6 @@
 import { useContext } from "react"; 
 import LoginContext from "../../common/login/Context";
-import { LoginType } from "../../common/login/model";
+import { LoginType } from "../../common/login";
 
 const LoginSelect = () => {
     const context = useContext(LoginContext);
