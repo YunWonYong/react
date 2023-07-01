@@ -1,8 +1,11 @@
+import LoginProvider from "./common/login/Provider";
+import LoginSelect from "./components/login/LoginSelect";
+
 const Login = () => {
     return (
-        <>
-            login
-        </>
+        <LoginProvider>
+            <LoginSelect />
+        </LoginProvider>
     );
 };
 
