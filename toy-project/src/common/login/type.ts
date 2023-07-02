@@ -1,10 +1,12 @@
+import { AnyObjectType } from "../type";
+
 export interface LoginInterface {
-    login(): Promise<any>;
+    login(body?: AnyObjectType): Promise<any>;
     logout(): Promise<any>;
 };
 
 export interface SocialLoginAdapterInterface {
-    _login(): Promise<any>;
+    _login(body?: AnyObjectType): Promise<any>;
     _logout(): Promise<any>;
     _init(): any;
 };
@@ -17,7 +19,7 @@ export enum LoginType {
 };
 
 export type LoginContextType = {
-    login: (type: LoginType) => Promise<any>,
+    login: (type: LoginType, body?: AnyObjectType) => Promise<any>,
     logout: () => Promise<any>,
 };
 

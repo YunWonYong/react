@@ -1,8 +1,10 @@
 import { FC, useState } from "react";
-import { ChildrenType } from "../type";
+import { AnyObjectType, ChildrenType } from "../type";
 import LoginContext from "./Context";
 import { LoginManager, LoginType } from ".";
 import { LoginInfoType } from "./type";
+import NaverLoginBtn from "./social/naver/Button";
+import FaceBookLoginBtn from "./social/faceBook/Button";
 
 const Provider: FC<ChildrenType> = ({ children }) => {
     const [loginInfo, setLoginInfo] = useState<LoginInfoType>({
@@ -11,10 +13,10 @@ const Provider: FC<ChildrenType> = ({ children }) => {
             
         }
     });
-    const login = async (type: LoginType) => {
+    const login = async (type: LoginType, body?: AnyObjectType) => {
         try {
             const instance = LoginManager.getInstance(type);
-            const result = await instance.login();
+            const result = await instance.login(body);
             setLoginInfo(() => {
                 return {
                     instance,
@@ -59,4 +61,17 @@ const LoginProvider: FC<ChildrenType> = ({ children }) => {
     );
 };
 
+const LoginBtnBox = () => {
+    return (
+        <article>
+            <FaceBookLoginBtn />
+            <NaverLoginBtn />
+        </article>
+    );
+};
+
 export default LoginProvider;
+
+export {
+    LoginBtnBox
+};

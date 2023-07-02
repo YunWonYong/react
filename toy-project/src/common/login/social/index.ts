@@ -1,6 +1,8 @@
 import { LoginType } from "..";
 import { FaceBookLogin } from "./faceBook";
 import { LoginInterface, SocialLoginAdapterInterface } from "../type";
+import { NaverLogin } from "./naver";
+import { AnyObjectType } from "../../type";
 
 export abstract class AbstSocialLoginAdapter implements LoginInterface {
     constructor(private readonly instance: SocialLoginAdapterInterface) {}
@@ -14,6 +16,9 @@ export abstract class AbstSocialLoginAdapter implements LoginInterface {
                         throw new Error("facebook sdk not found!!!");
                     }
                     instance = new FaceBookLogin(window.FB);
+                    break;
+                case LoginType.NAVER:
+                    instance = new NaverLogin();
                     break;
                 default:
                     throw new Error(`not supported social login type: ${type}`);
@@ -29,12 +34,12 @@ export abstract class AbstSocialLoginAdapter implements LoginInterface {
         }
     }
 
-    login(): Promise<any> {
+    login(body?: AnyObjectType): Promise<any> {
         return new Promise((resolve, reject) => {
             this.instance
-            ._login()
+            ._login(body)
             .then((result) => {
-                console.log(result);
+                console.log("SocialLogin Adapter login function", result);
                 resolve(result);
             })
             .catch(reject);

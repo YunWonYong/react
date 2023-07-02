@@ -1,10 +1,16 @@
-import LoginProvider from "./common/login/Provider";
-import LoginSelect from "./components/login/LoginSelect";
+import { Outlet, useLocation } from "react-router-dom";
+import LoginProvider, { LoginBtnBox } from "./common/login/Provider";
 
 const Login = () => {
+    const location = useLocation();
+    const { pathname } = location;
     return (
         <LoginProvider>
-            <LoginSelect />
+            {
+                pathname !== "/login/naver"
+                    ?   <LoginBtnBox />
+                    :   <Outlet />
+            }
         </LoginProvider>
     );
 };
