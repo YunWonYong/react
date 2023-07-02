@@ -15,6 +15,7 @@ const Naver = () => {
                 const { hash } = location;
                 const loginResult = await context.login(LoginType.NAVER, { query: hash });
                 console.log(loginResult);
+                redirectUrl = "/";
             } catch(e) {
                 alert("네이버 로그인 실패 했습니다.");
             } finally {
