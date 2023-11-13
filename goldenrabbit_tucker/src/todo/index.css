@@ -1,0 +1,87 @@
+.wrap {
+    width: 1200px;
+    margin: auto;
+}
+
+.todo_header {
+    margin-bottom: 2px;
+}
+
+.todo_list {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+    margin: auto;
+}
+
+.todo_input_box {
+    padding: 0px 0px 20px;
+    display: flex;
+}
+
+.todo_input {
+    width: 80%;
+    padding: 10px 0px 10px 20px;
+    font-weight: 600px;
+    font-size: 1.5em;
+}
+
+.todo_add_btn {
+    border: 1px solid black;
+    background-color: dodgerblue;
+    border-radius: 2px;
+    font-size: 1.5em;
+    width: 15%;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 2;
+    color: white;
+    font-weight: 600;
+}
+
+.todo_card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.todo_card.check {
+    text-decoration: line-through;
+}
+
+.todo_content {
+    font-size: 1.5em;
+    width: 50%;
+    text-align: left;
+}
+
+.check_box {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.check_box::after {
+    content: " ";
+    display: block;
+    width: 2em;
+    height: 2em;
+    border: 1px solid black;
+}
+
+.delete_btn {
+    position: absolute;
+    right: 20px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.todo_card.check > .check_box::after {
+    background-color: aquamarine;
+}
