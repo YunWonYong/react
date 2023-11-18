@@ -1,10 +1,11 @@
+import ServerProvider from "./server/ServerProvider";
 import TodoList from "./todo";
 
 const App = () => {
     return (
-        <section>
+        <ServerProvider>
             <TodoList />
-        </section>
+        </ServerProvider>
     );
 }
 

@@ -1,78 +1,104 @@
-import { FC, useState, useEffect, useCallback, useRef, KeyboardEvent } from "react";
+import { FC, useContext, useState, useEffect, useCallback, useRef, KeyboardEvent } from "react";
+import { v4 as uuidV4 } from "uuid";
 import TodoWrap from "./Wrap";
-import axios, { AxiosResponse } from "axios";
 import "./index.css";
+import ServerContext, { HttpMethods, ServerCallParamType } from "../server/ServerContext";
 
-type TodoCardType = {
+type TodoListType = {
+    info?: Record<string, string>,
+    keys?: string[],
+    values?: string[]
+};
+
+type TodoType = {
     id: string,
     content: string,
     check: boolean,
 };
 
 const TodoList = () => {
-    const [list, setList] = useState<TodoCardType[]>([]);
+    const [writer, setWriter] = useState<string | null>(null);
+    const [refresh, setRefresh] = useState<boolean>(false);
+    const [list, setList] = useState<TodoListType>({
+        
+    });
+    const server = useContext(ServerContext);
+    
+    useEffect(() => {
+        const storage = window.localStorage;
+        let writer = storage.getItem("writer");
+        if (writer === null) {
+            writer = uuidV4();
+        }
+        storage.setItem("writer", writer);
+        setWriter(writer);
+    }, []);
 
     useEffect(() => {
-        const getData = async() => {
-            const response: AxiosResponse<TodoCardType[], any> = await axios.get("http://localhost:3250/todo");
-            const { data } = response;
+        if (writer === null) {
+            return;
+        }
+        const getList = async () => {
+            const parmas: ServerCallParamType = {
+                method: HttpMethods.GET,
+                path: `todos/${writer}`
+            };
+            const data = await server.api<TodoListType>(parmas);
             setList(data);
-        };
+        }
 
-        getData();
-    }, []);
+        getList();
+    }, [writer, server, refresh]);
 
     const insert = useCallback(async (content: string) => {
         try {
-            const { data } = await axios.post(`http://localhost:3250/todo`, {
-                content
-            });
-            if (data) {
-                setList((todoList) => {
-                    return [...todoList, data];
-                });
+            const parmas: ServerCallParamType = {
+                method: HttpMethods.POST,
+                path: `todos`,
+                body: {
+                    writer,
+                    content
+                }
+            };
+            const data = await server.api<string>(parmas);
+            if (data === "ok") {
+                setRefresh((refresh) => !refresh);
             }
-            return data;
         } catch(e) {
             console.error(e);
-            return null;
         }
-    }, [setList]);
+    }, [writer, server]);
 
     const check = useCallback(async (id: string) => {
         try {
-            const { data } = await axios.put(`http://localhost:3250/todo/${id}`);
+            const parmas: ServerCallParamType = {
+                method: HttpMethods.PATCH,
+                path: `todos/${writer}/${id}`
+            };
+            const data = await server.api<string>(parmas);
             if (data === "ok") {
-                setList((todoList) => {
-                    return todoList.map((todoCard) => {
-                        if (todoCard.id === id) {
-                            todoCard.check = !todoCard.check;
-                        }
-                        return todoCard;
-                    });
-                });
+                setRefresh((refresh) => !refresh);
             }
-            return data;
         } catch(e) {
             throw e;
         }
-    }, [setList]);
+    }, [writer, server]);
 
     const remove = useCallback(async (id: string) => {
         try {
-            const { data } = await axios.delete(`http://localhost:3250/todo/${id}`);
+            
+            const parmas: ServerCallParamType = {
+                method: HttpMethods.DELETE,
+                path: `todos/${writer}/${id}`
+            };
+            const data = await server.api<string>(parmas);
             if (data === "ok") {
-                setList((todoList) => {
-                    return todoList.filter((todoCard) => {
-                        return todoCard.id !== id;
-                    });
-                });
+                setRefresh((refresh) => !refresh);
             }
-            return data;
         } catch(e) {
             throw e;
         }
-    }, [setList]);
+    }, [writer, server]);
 
     return (
         <TodoWrap>
@@ -81,11 +107,13 @@ const TodoList = () => {
                     insertFn={ insert }
                 />
                 {
-                    list.map((todoCard: TodoCardType) => {
+                    list.values &&
+                        list.values.map((str: string) => {
+                        const todo = JSON.parse(str) as TodoType
                         return (
                             <TodoCard 
-                                key={todoCard.id}
-                                info={todoCard}
+                                key={todo.id}
+                                info={todo}
                                 checkFn={ check }
                                 removeFn={ remove }
                             />
@@ -97,7 +125,7 @@ const TodoList = () => {
     );
 };
 
-const TodoInput: FC<{insertFn: (content: string) => Promise<TodoCardType | null> }> = ({ insertFn }) => {
+const TodoInput: FC<{insertFn: (content: string) => Promise<void> }> = ({ insertFn }) => {
     const inputRef = useRef<HTMLInputElement>(null);
     const insert = async () => {
         const { current } = inputRef;
@@ -105,10 +133,7 @@ const TodoInput: FC<{insertFn: (content: string) => Promise<TodoCardType | null>
             throw new Error("current not found!!!.");
         }
         const { value } = current;
-        const result = await insertFn(value);
-        if (result === null) {
-            return;
-        }
+        await insertFn(value);
         current.value = "";
     };
     return (
@@ -139,7 +164,7 @@ const TodoInput: FC<{insertFn: (content: string) => Promise<TodoCardType | null>
     );
 }
 
-const TodoCard: FC<{info: TodoCardType, checkFn:(id: string) => Promise<string>, removeFn: (id: string) => Promise<string> }> = ({ info, checkFn, removeFn }) => {
+const TodoCard: FC<{info: TodoType, checkFn:(id: string) => Promise<void>, removeFn: (id: string) => Promise<void> }> = ({ info, checkFn, removeFn }) => {
     return (
         <article className={`todo_card ${info.check? "check": ""}`}>
             <div
